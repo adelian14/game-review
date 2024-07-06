@@ -153,6 +153,7 @@ export class SingleGameDisplayer {
             });
         }
         else{
+            $('#screenshot-text').html('');
             $('.screenshot-box').hide();
         }
         $('#min-req').html('');
@@ -163,6 +164,9 @@ export class SingleGameDisplayer {
                 h.innerHTML = `${e[0]}: ${e[1]}`;
                 $('#min-req').append(h);
             });
+        }
+        else{
+            $('#sys-req-text').html('');
         }
         if(this.game.game_url){
             url=this.game.game_url;
