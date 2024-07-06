@@ -1,0 +1,62 @@
+@media (max-width: 1200px) {
+    .nav-btn{
+        padding: 0 5px;
+    }
+    .nav-logo h3{
+        font-size: 22px;
+        font-weight: 500;
+    }
+}
+@media (max-width: 992px) {
+    .featured-game-card .img-box {
+        height: 300px;
+        overflow: hidden;
+    }
+    .nav-logo h3{
+        font-size: 24px;
+        font-weight: 700;
+    }
+    .mynav{
+        position: relative;
+    }
+    .nav-logo, .burger-menu{
+        z-index: 75;
+    }
+    .burger-menu{
+        display: flex;
+    }
+    .outer-nav-items{
+        position: absolute;
+        z-index: 50;
+        top:45px;
+        left: 0;
+        right: 0;
+        background-color: #271b6d;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        display: none;
+    }
+    .nav-items{
+        flex-direction: column;
+        padding: 40px 20px;
+        row-gap: 12px;
+        align-items: center;
+    }
+    .nav-items .navItem{
+        width: 50%;
+    }
+    .nav-items .nav-btn{
+        width: 100%;
+    }
+    .game-card .img-box img{
+        height: 300px;
+    }
+}
+@media (max-width: 768px) {
+    .some-details{
+        flex-direction: column;
+    }
+}
+@media (max-width: 576px) {
+
+}

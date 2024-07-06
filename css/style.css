@@ -1,0 +1,181 @@
+.game-banner {
+
+    background-image: linear-gradient(rgba(28, 40, 70, .2), rgba(28, 40, 70, 1) 90%), url('../imgs/maxresdefault.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+
+}
+
+.game-banner .overlay {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(20, 30, 48, .2), rgba(20, 30, 48, .2));
+}
+
+#loader {
+    display: flex;
+}
+.mynav {
+    background-color: #271b6d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, .5) 0px 0px 15px 1px;
+}
+
+.nav-items{
+    display: flex;
+    overflow: hidden;
+}
+
+.nav-logo h3,
+.navItem span {
+    font-family: "Roboto Slab", serif;
+}
+
+.navItem span {
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+.nav-logo h3 {
+    letter-spacing: 3px;
+    color: #e5e5e5;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 32px;
+}
+.burger-menu{
+    color: #e5e5e5;
+    cursor: pointer;
+    display: none;
+}
+.game-card {
+    border: 1.5px solid #1118;
+    border-radius: 20px;
+    transition: .5s;
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.game-card .img-box {
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.game-card .img-box img {
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.game-card .img-box {
+    position: relative;
+}
+
+.game-card .img-box .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: .5s;
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.title-card {
+    color: #e5e5e5;
+}
+
+.title-card h5 {
+    background-color: rgb(40, 167, 40);
+    padding: 3px 5px;
+    border-radius: 5px;
+}
+
+.short-desc {
+    color: #e5e5e5;
+    flex-grow: 1;
+}
+
+.bottom-card {
+    color: #e5e5e5;
+}
+
+.bottom-card h6 {
+    background-color: #2228;
+    padding: 3px 5px;
+    border-radius: 5px;
+}
+
+.game-card:hover {
+    transform: scale(1.02);
+}
+
+.game-card:hover .img-box .overlay {
+    opacity: 0;
+}
+
+.featured-game-card {
+    position: relative;
+    cursor: pointer;
+}
+
+.featured-game-card .title-card h3 {
+    font-size: 36px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: "Roboto Slab", serif;
+    text-align: center;
+    width: 100%;
+    transition: background-color 0.5s;
+    padding-block: 10px;
+}
+
+.featured-game-card .title-card {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.featured-game-card .img-box {
+    height: 200px;
+    overflow: hidden;
+}
+.featured-game-card:hover .img-box img{
+    opacity: .2;
+    transform: scale(1.03);
+}
+.featured-game-card:hover .title-card{
+    opacity: 1;
+}
+.featured-game-card:hover .title-card h3{
+    background-color: rgba(0, 0, 255, .5);
+}
+
+.featured-game-card .img-box img {
+    object-fit: cover;
+    object-position: top;
+    height: 100%;
+    opacity: .7;
+    transition: .5s;
+}
+.close-btn{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+}
+#single-game{
+    display: none;
+}
+.screenshot-box{
+    cursor: pointer;
+}
